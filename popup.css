@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.helper-nav{
+    width: 80px;
+    color: #333;
+    margin: auto;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.helper-nav-item{
+    text-align: center;
+    list-style-type: none;
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+.helper-nav-item a{
+    text-decoration: none;
+    color: #333;
+}
