@@ -15,8 +15,8 @@
     ],
     "content_scripts": [{
         "matches": [
-            "http://bbs.nga.cn/nuke.php?func=ucp&uid*",
-            "https://bbs.nga.cn/nuke.php?func=ucp&uid*"
+            "http://bbs.nga.cn/*",
+            "https://bbs.nga.cn/*"
         ],
         "js": [
             "script.js"
