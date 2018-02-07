@@ -4,16 +4,13 @@ export default function writeStyle() {
         body{\
             position: relative;\
         }\
-        .follow-lis' +
-            't-panel{\
+        .follow-list-panel{\
             position: fixed;\
             width: 800px;\
-            m' +
-            'argin: auto;\
+            margin: auto;\
             background: #f5e8cb;\
             left: 0;\
-          ' +
-            '  top: 0;\
+            top: 0;\
         }\
     ';
     document

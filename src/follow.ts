@@ -1,8 +1,9 @@
 import {Following} from './types';
 export default function createFollowButton(followingList : Following[]) {
-    let uid : string = location
+    let matchArray : RegExpMatchArray | null = location
         .search
-        .match(/uid=([\d]{1,})/)[1];
+        .match(/uid=([\d]{1,})/);
+    let uid : string | null = matchArray && matchArray[1];
     if (uid) {
         let isFollowing : boolean = followingList.find((value) => value.uid == uid)
             ? true
@@ -11,10 +12,10 @@ export default function createFollowButton(followingList : Following[]) {
         let followButton = document.createElement('li');
         if (isFollowing) {
             followButton.innerHTML = '<li style="width: 240px;" class="following">关注中</li>';
-            infoWrapper.appendChild(followButton);
+            infoWrapper&&infoWrapper.appendChild(followButton);
         } else {
             followButton.innerHTML = '<li style="width: 240px;">+关注</li>';
-            infoWrapper.appendChild(followButton);
+            infoWrapper&&infoWrapper.appendChild(followButton);
         }
         followButton.onclick = (e) => {
             let that = e.target as HTMLElement;
@@ -27,7 +28,7 @@ export default function createFollowButton(followingList : Following[]) {
                 that.innerHTML = '<li style="width: 240px;" class="following">关注中</li>';
                 let imgUrl : string = (document.querySelector('#ucpuser_avatar_blockContent img')as HTMLImageElement).src;
                 let username : string = (document.querySelectorAll('.info li')[1].querySelector('span>span')as HTMLElement).innerText;
-                followingList.push({uid: uid, imgUrl: imgUrl, username: username});
+                followingList.push({uid: uid  as string, imgUrl: imgUrl, username: username});
             }
             localStorage.setItem('helpData', JSON.stringify({'followingList': followingList}));
         }

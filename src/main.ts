@@ -10,4 +10,5 @@ window.onload = function () {
     initData(followingList); //是否初始化本地数据
     createFollowingListPanel(followingList); //关注列表元素生成及事件
     createFollowButton(followingList); //关注按钮及事件
+    console.log('插件开始运作');
 }

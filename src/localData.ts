@@ -1,6 +1,6 @@
-import { Following } from "./types";
+import {Following} from "./types";
 export default function initData(followingList : Following[]) {
-    let helpData : string = localStorage.getItem('helpData');
+    let helpData : string | null = localStorage.getItem('helpData');
     if (helpData) {
         followingList = JSON
             .parse(helpData)

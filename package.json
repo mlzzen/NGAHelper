@@ -1,0 +1,33 @@
+{
+    "name": "NGAHelper",
+    "version": "1.0.0",
+    "description": "bbs.nga.cn论坛的一个插件，目前有关注功能，正在完善中。",
+    "main": "popup.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/creanme/NGAHelper.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/creanme/NGAHelper/issues"
+    },
+    "homepage": "https://github.com/creanme/NGAHelper#readme",
+    "scripts": {
+        "build": "webpack --config webpack.config.js --progress --color"
+    },
+    "dependencies": {
+        "babel": "^6.23.0",
+        "babel-core": "^6.26.0",
+        "babel-loader": "^7.1.2",
+        "babel-polyfill": "^6.26.0",
+        "babel-preset-env": "^1.6.1",
+        "ts-loader": "^3.4.0",
+        "typescript": "^2.7.1",
+        "uglifyjs-webpack-plugin": "^1.1.8",
+        "webpack": "^3.10.0",
+        "webpack-dev-server": "^2.11.1",
+        "webpack-merge": "^4.1.1"
+    }
+}
