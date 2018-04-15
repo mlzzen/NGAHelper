@@ -1,11 +1,12 @@
 import {Following} from "./types";
-export default function initData(followingList : Following[]) {
-    let helpData : string | null = localStorage.getItem('helpData');
+export default async function initData(){
+    let followingList : Following[] = [];
+    let helpData : string | null = await localStorage.getItem('helpData');
     if (helpData) {
-        followingList = JSON
-            .parse(helpData)
-            .followingList;
+        console.log('从本地储存种获取关注列表');
+        return followingList = JSON.parse(helpData).followingList;
     } else {
         localStorage.setItem('helpData', JSON.stringify({'followingList': []}));
+        return followingList;
     }
 }

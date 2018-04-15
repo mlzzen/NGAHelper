@@ -15,7 +15,7 @@
     },
     "homepage": "https://github.com/creanme/NGAHelper#readme",
     "scripts": {
-        "build": "webpack --config webpack.config.js --progress --color"
+        "build": "webpack --config webpack.config.js --progress --color --watch"
     },
     "dependencies": {
         "babel": "^6.23.0",

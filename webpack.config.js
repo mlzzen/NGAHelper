@@ -40,7 +40,7 @@ module.exports = {
             }
         ]
     },
-    devtool: 'cheap-module-source-map',
+    devtool: 'cheap-module-eval-source-map',
     plugins: [uglifyJSPlugin],
     // 设置出口文件地址与文件名
     output: {
