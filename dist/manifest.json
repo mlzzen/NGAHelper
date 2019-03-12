@@ -19,7 +19,7 @@
             "https://bbs.nga.cn/*"
         ],
         "js": [
-            "bundle.min.js"
+            "js/main.js"
         ],
         "run_at": "document_end"
     }]
