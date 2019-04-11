@@ -12,6 +12,7 @@
 
 ## 安装
 
+[下载](https://github.com/creanme/NGAHelper/releases)
 
 
 ## License
